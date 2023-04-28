@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+<ion-content ng-controller="TodoContainer">
+  <div class="list">
+    <div class="item item-input-insert">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="to-do list item" ng-model="todoModel.todo">
+      </label>
+      <button class="button button-small" ng-click="addTodo()">Add Item</button>
+  </div>
+  
+  <!-- <ion-item *ngFor="let name of names">
+    <ion-label>{{name.Name}} with value: {{name:Value}} </ion-label>
+    <ion-checkbox [(ngModel)]="name.Value" ></ion-checkbox>
+  </ion-item> -->
+
+
+  <ul class="list">
+    <ion-item *ngFor="let todo of todos;">
+      <li class="item">
+        {{ todo }}
+      </li>
+    </ion-item>
+
+  </ul>
+
+  </div>
+</ion-content>

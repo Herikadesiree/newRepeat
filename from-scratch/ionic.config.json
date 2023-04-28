@@ -1,0 +1,7 @@
+{
+  "name": "from-scratch",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
